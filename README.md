@@ -110,11 +110,11 @@
 - Bhimavaram, Andhra pradesh, India
 #### Hackathon conducted on 
 - 22nd and 23rd September 2025 
-#### Teammates
+#### Team Members
 - Bhuvan Anupoju
 - Mahesh Kadali
 - Charan Polaku
-- Ramaya Penta
+- Ramya Penta
 - Mounika Gudivada
 - Anusha Alluri
 
