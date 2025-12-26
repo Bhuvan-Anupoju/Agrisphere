@@ -7,10 +7,10 @@
 - The Smart Farmer Assistance Platform aims to bridge the gap between farmers and modern agricultural technologies by offering essential tools and resources in a single, easy-to-use website. The platform provides location-based weather updates, crop disease identification and resolution, crop manuals, agriculture magazines, an e-commerce marketplace, educational vlogs, and a yield & fertilizer optimization tool.
 
 - The application focuses on usability, accessibility, and practical value, ensuring that farmers can make informed decisions to improve crop yield, reduce losses, and stay updated with the latest agricultural advancements.
-  ## Live Website
+## Live Website
 #### 🚀Experience Website in Live!
 🔗Live Demo :
-[Website Live Link](bhuvan-anupoju.github.io/Agrisphere/)
+[Website Live Link](https://bhuvan-anupoju.github.io/Agrisphere/)
 ## 🎯 Problem Statement
 
 #### Farmers often struggle to access :
