@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="banners/logo main.png" type="image/png" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Agri Sphere</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <img src="banners/logo main.png" alt="Logo" />
+        <div class="nav-text">
+          <span>Agri Sphere</span>
+          <span>Grow Smarter, Farm Better</span>
+        </div>
+      </div>
+
+      <div class="nav-right">
+        <a href="e-quickmart-main/index.html">Shop Now</a>
+        <a href="blog2-main/index.html">Explore videos</a>
+        <a href="Fertilizer Optimizer/index.html">Get Insights</a>
+      </div>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <div class="carousel-slide">
+          <a href="e-quickmart-main/index.html"
+            ><img src="banners/agri shop now.png" alt="Slide 1"
+          /></a>
+        </div>
+        <div class="carousel-slide">
+          <a href="Fertilizer Optimizer/index.html"
+            ><img src="banners/fertlizer optxime.png" alt="Slide 2"
+          /></a>
+        </div>
+        <div class="carousel-slide">
+          <a href="blog2-main/index.html"
+            ><img src="banners/AGRICULTURE watch.png" alt="Slide 3"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <div class="weather-tips-wrapper">
+      <div class="wt-container">
+        <!-- Weather Card -->
+        <div class="wt-card wt-weather-card">
+          <h2 id="wt-location">Loading...</h2>
+          <div class="wt-today">
+            <span id="wt-temperature" class="wt-today-temp">--°C</span>
+            <span id="wt-emoji" class="wt-emoji">⛅</span>
+            <div id="wt-desc" class="wt-desc">--</div>
+          </div>
+          <div class="wt-forecast">
+            <div class="wt-forecast-day" id="wt-day1">Tomorrow: --°C, --</div>
+            <div class="wt-forecast-day" id="wt-day2">Day After: --°C, --</div>
+          </div>
+        </div>
+
+        <!-- Tip Card -->
+        <div class="wt-card wt-tip-card tipoftheday">
+          <div class="wt-tip-text">
+            <h3>Tip of the Day 🌱</h3>
+            <p>
+              Check soil moisture before watering,overwatering is just as
+              harmful as underwatering. Healthy roots grow best in balanced,
+              moist soil
+            </p>
+          </div>
+          <div class="wt-tip-img">
+            <img src="banners/tipof.jpg" alt="Tip Image" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 style="margin: 20px; font-size: 25px" id="shows">Crop Manuals</h2>
+    <p style="margin: 20px; font-size: 14px; line-height: 2px" id="shows">
+      Learn set up, management & cultivation of crop
+    </p>
+    <div class="card-wrapper2">
+      <div class="card-container2">
+        <div class="card2">
+          <a href="crop pages/paddy.html"
+            ><img src="crop manual/paddy 1.png" alt="Image 1"
+          /></a>
+        </div>
+        <div class="card2">
+          <a href="crop pages/sugercane.html"
+            ><img src="crop manual/sugar 1.png" alt="Image 2"
+          /></a>
+        </div>
+        <div class="card2">
+          <a href="crop pages/mango.html"
+            ><img src="crop manual/Mango Culture (3).png" alt="Image 3"
+          /></a>
+        </div>
+        <div class="card2">
+          <a href="crop pages/corn.html"
+            ><img src="crop manual/Corn Crop.png" alt="Image 4"
+          /></a>
+        </div>
+        <div class="card2">
+          <a href="crop pages/marigold.html"
+            ><img src="crop manual/marigold.png" alt="Image 5"
+          /></a>
+        </div>
+        <div class="card2">
+          <a href="crop pages/banana.html">
+            <img src="crop manual/Banana Culture (1).png" alt="Image 6"
+          /></a>
+        </div>
+        <div class="card2">
+          <a href="crop pages/okra.html"
+            ><img src="crop manual/okra crop.png" alt="Image 7"
+          /></a>
+        </div>
+        <div class="card2">
+          <a href="crop pages/potato.html"
+            ><img src="crop manual/Potato Culture (1).png" alt="Image 8"
+          /></a>
+        </div>
+        <div class="card2">
+          <a href="crop pages/urudal.html"
+            ><img src="crop manual/Urad dal Crop.png" alt="Image 9"
+          /></a>
+        </div>
+        <div class="card2">
+          <a href="crop pages/timato.html">
+            <img src="crop manual/tomato crop.png" alt="Image 10"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <h2 style="margin: 20px; font-size: 25px" id="shows">Plant Diseases</h2>
+    <p style="margin: 20px; font-size: 14px; line-height: 2px" id="shows">
+      Understand diseases, precautions & treatments
+    </p>
+    <div class="card-wrapper">
+      <div class="card-container">
+        <div class="card">
+          <a href="desies pages/downy miles.html"
+            ><img src="plant esies/downy mildew.jpg" alt="Image 1"
+          /></a>
+          <h2>Downy Mildew</h2>
+        </div>
+        <div class="card">
+          <a href="desies pages/powder mil.html"
+            ><img src="plant esies/powder.jpg" alt="Image 2"
+          /></a>
+          <h2>Powder Mildew</h2>
+        </div>
+        <div class="card">
+          <a href="desies pages/antharacnose.html"
+            ><img src="plant esies/two.jpg" alt="Image 3"
+          /></a>
+          <h2>Xanthomonas</h2>
+        </div>
+        <div class="card">
+          <a href="desies pages/rust desiese.html"
+            ><img src="plant esies/rust.webp" alt="Image 4"
+          /></a>
+          <h2>Rust Desies</h2>
+        </div>
+        <div class="card">
+          <a href="desies pages/blight.html"
+            ><img src="plant esies/blight.webp" alt="Image 5"
+          /></a>
+          <h2>Blight</h2>
+        </div>
+        <div class="card">
+          <a href="desies pages/antharacnose.html"
+            ><img src="plant esies/antha.webp" alt="Image 6"
+          /></a>
+          <h2>Anthracnose</h2>
+        </div>
+        <div class="card">
+          <a href="desies pages/cancer.html">
+            <img src="plant esies/craccc.webp" alt="Image 7"
+          /></a>
+          <h2>Canker Disease</h2>
+        </div>
+        <div class="card">
+          <a href="desies pages/galls.html"
+            ><img src="plant esies/galls.jpeg" alt="Image 7"
+          /></a>
+          <h2>Galls</h2>
+        </div>
+      </div>
+    </div>
+    <h2 style="margin: 20px; font-size: 25px" id="shows">Download Magazines</h2>
+
+    <div class="card-wrapper2">
+      <div class="card-container2">
+        <div class="card3">
+          <a
+            href="Magazines/Magazines PDF/Intensive_ Agriculture_JAN_MAR_2024.pdf"
+            download
+            ><img src="Magazines/eng 1.jpg" alt="Image 1"
+          /></a>
+        </div>
+        <div class="card3">
+          <a href="Magazines/Magazines PDF/justagri.pdf" download>
+            <img src="Magazines/eng 2.webp" alt="Image 2"
+          /></a>
+        </div>
+        <div class="card3">
+          <a href="Magazines/Magazines PDF/Paka siri.pdf" download
+            ><img src="Magazines/tel 1.webp" alt="Image 3"
+          /></a>
+        </div>
+        <div class="card3">
+          <a href="Magazines/Magazines PDF/Rice.pdf" download
+            ><img src="Magazines/tel 2.jpg" alt="Image 4"
+          /></a>
+        </div>
+        <div class="card3">
+          <a
+            href="Magazines/Magazines PDF/Intensive_Agriculture_Jul_Sep_2023.pdf"
+            download
+          >
+            <img src="Magazines/eng 3.webp" alt="Image 5"
+          /></a>
+        </div>
+        <div class="card3">
+          <a href="Magazines/Magazines PDF/Siridhanyalu-DrKhadar.pdf" download
+            ><img src="Magazines/tel 4.jpg" alt="Image 6"
+          /></a>
+        </div>
+        <div class="card3">
+          <a
+            href="Magazines/Magazines PDF/Intensive_Agriculture_Jul_Sep_2023.pdf"
+            download
+          >
+            <img src="Magazines/eng 4.webp" alt="Image 7"
+          /></a>
+        </div>
+        <div class="card3">
+          <a href="Magazines/Magazines PDF/Paka siri.pdf" download>
+            <img src="Magazines/tel 3.jpg" alt="Image 8"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <!-- Helpline Center Card -->
+    <h2 style="margin: 20px; font-size: 25px" id="shows">HELPLINE</h2>
+    <div class="helpcard">
+      <div class="card-body">
+        <div class="card">
+          <img class="top-image" src="banners/help.png" alt="Farmer Image" />
+          <div class="card-info">
+            <div class="logo-title">
+              <img src="banners/logo main.png" alt="Logo" />
+              <span>Agri Sphere</span>
+            </div>
+            <h2>Helpline Center</h2>
+            <p>Any problems in managing your farm? Talk to our Experts</p>
+            <div class="arrow" onclick="openModal()">Schedule Call</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div class="modal" id="callModal" style="z-index: 100000000000000">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h3>Schedule a Call</h3>
+        <small>📅 Schedule a call tomorrow</small>
+        <div class="options">
+          <label
+            ><input type="radio" name="time" value="9am-12pm" /> 9am –
+            12pm</label
+          >
+          <label
+            ><input type="radio" name="time" value="3pm-6pm" /> 3pm – 6pm</label
+          >
+        </div>
+        <textarea placeholder="Describe your problem..."></textarea>
+        <button class="btn" onclick="scheduleCall()">Confirm</button>
+      </div>
+    </div>
+
+    <!-- Success Popup -->
+    <div class="success-popup" id="successPopup">✅ Call is scheduled!</div>
+
+    <div class="container swiper" id="services" style="z-index: 1">
+      <h2 style="margin: 20px; font-size: 25px" id="shows">Must Watch</h2>
+      <p style="margin: 20px; font-size: 14px; line-height: 2px" id="shows">
+        Videos to keep you informed and ahead
+      </p>
+      <div class="slider-wrapper">
+        <div class="card-list swiper-wrapper">
+          <div class="card-item swiper-slide">
+            <img
+              src="blog2-main/images/drone farming technology.png"
+              class="card-img"
+            />
+            <h4 class="card-item-desription">Sustainable Agriculture Ideas</h4>
+            <a
+              href="blog2-main/pv11.html"
+              style="
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+                padding: 8px 16px;
+                background-color: #2196f3;
+                color: #fff;
+                text-decoration: none;
+                font-weight: bold;
+                border-radius: 20px;
+                font-size: 0.9rem;
+                transition: background 0.3s ease;
+              "
+            >
+              Watch Now
+              <span
+                style="
+                  display: inline-block;
+                  width: 8px;
+                  height: 8px;
+                  border-right: 2px solid #fff;
+                  border-bottom: 2px solid #fff;
+                  transform: rotate(-45deg);
+                  margin-left: 8px;
+                "
+              ></span>
+            </a>
+          </div>
+          <div class="card-item swiper-slide">
+            <img
+              src="blog2-main/images/eco-friendly agriculture.png"
+              class="card-img"
+            />
+
+            <h4 class="card-item-desription">Eco-friendly Agriculture</h4>
+            <a
+              href="blog2-main/pv14.html"
+              style="
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+                padding: 8px 16px;
+                background-color: #2196f3;
+                color: #fff;
+                text-decoration: none;
+                font-weight: bold;
+                border-radius: 20px;
+                font-size: 0.9rem;
+                transition: background 0.3s ease;
+              "
+            >
+              Watch Now
+              <span
+                style="
+                  display: inline-block;
+                  width: 8px;
+                  height: 8px;
+                  border-right: 2px solid #fff;
+                  border-bottom: 2px solid #fff;
+                  transform: rotate(-45deg);
+                  margin-left: 8px;
+                "
+              ></span>
+            </a>
+          </div>
+          <div class="card-item swiper-slide">
+            <img
+              src="blog2-main/images/vertical & layered farming.png"
+              class="card-img"
+            />
+
+            <h4 class="card-item-desription">Robots in farming</h4>
+            <a
+              href="blog2-main/pv10.html"
+              style="
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+                padding: 8px 16px;
+                background-color: #2196f3;
+                color: #fff;
+                text-decoration: none;
+                font-weight: bold;
+                border-radius: 20px;
+                font-size: 0.9rem;
+                transition: background 0.3s ease;
+              "
+            >
+              Watch Now
+              <span
+                style="
+                  display: inline-block;
+                  width: 8px;
+                  height: 8px;
+                  border-right: 2px solid #fff;
+                  border-bottom: 2px solid #fff;
+                  transform: rotate(-45deg);
+                  margin-left: 8px;
+                "
+              ></span>
+            </a>
+          </div>
+          <div class="card-item swiper-slide">
+            <img
+              src="blog2-main/images/water-saving farming tricks.png"
+              class="card-img"
+            />
+
+            <h4 class="card-item-desription">Next-Gen AgriTech Explained</h4>
+            <a
+              href="blog2-main/pv6.html"
+              style="
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+                padding: 8px 16px;
+                background-color: #2196f3;
+                color: #fff;
+                text-decoration: none;
+                font-weight: bold;
+                border-radius: 20px;
+                font-size: 0.9rem;
+                transition: background 0.3s ease;
+              "
+            >
+              Watch Now
+              <span
+                style="
+                  display: inline-block;
+                  width: 8px;
+                  height: 8px;
+                  border-right: 2px solid #fff;
+                  border-bottom: 2px solid #fff;
+                  transform: rotate(-45deg);
+                  margin-left: 8px;
+                "
+              ></span>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-slider-button swiper-button-prev"></div>
+        <div class="swiper-slider-button swiper-button-next"></div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="logo">
+        <img src="banners/logo main.png" alt="Agri Sphere Logo" />
+        <h2>Agri Sphere</h2>
+        <p class="quote">Grow Smarter, Farm Better</p>
+      </div>
+
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Website Developers</h3>
+          <p>Bhuvan A</p>
+          <p>Mahesh K</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Graphic Designers</h3>
+          <p>Anusha A</p>
+          <p>Mounika G</p>
+          <p>Ramya P</p>
+          <p>Charan P</p>
+        </div>
+      </div>
+
+      <div class="social-icons">
+        <a href="#"><img src="youtube.png" alt="YouTube" /></a>
+        <a href="#"><img src="gmail.png" alt="Gmail" /></a>
+        <a href="#"><img src="instagram.png" alt="Instagram" /></a>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2025 Agri Sphere. All Rights Reserved.
+      </div>
+    </footer>
+    <script>
+      function toggleMenu() {
+        const navRight = document.querySelector(".nav-right");
+        navRight.classList.toggle("active");
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
+
+    <script>
+      const wtApiKey = "559e706c51965007e2174b479ade2403"; // 👉 Replace with your OpenWeather API key
+
+      function wtGetWeather(lat, lon) {
+        fetch(
+          `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${wtApiKey}&units=metric`
+        )
+          .then((res) => res.json())
+          .then((data) => {
+            document.getElementById("wt-location").textContent = data.city.name;
+
+            // Today
+            let todayTemp = Math.round(data.list[0].main.temp);
+            let todayWeather = data.list[0].weather[0].main;
+            let todayDesc = data.list[0].weather[0].description;
+
+            document.getElementById("wt-temperature").textContent =
+              todayTemp + "°C";
+            document.getElementById("wt-emoji").textContent =
+              wtGetEmoji(todayWeather);
+            document.getElementById("wt-desc").textContent =
+              wtCapitalize(todayDesc);
+
+            // Tomorrow
+            let tomorrowTemp = Math.round(data.list[8].main.temp);
+            let tomorrowDesc = wtCapitalize(
+              data.list[8].weather[0].description
+            );
+            document.getElementById(
+              "wt-day1"
+            ).textContent = `Tomorrow: ${tomorrowTemp}°C, ${tomorrowDesc}`;
+
+            // Day After Tomorrow
+            let dayAfterTemp = Math.round(data.list[16].main.temp);
+            let dayAfterDesc = wtCapitalize(
+              data.list[16].weather[0].description
+            );
+            document.getElementById(
+              "wt-day2"
+            ).textContent = `Day After: ${dayAfterTemp}°C, ${dayAfterDesc}`;
+          })
+          .catch((err) => console.error(err));
+      }
+
+      function wtGetEmoji(weather) {
+        switch (weather) {
+          case "Clear":
+            return "☀️";
+          case "Clouds":
+            return "☁️";
+          case "Rain":
+            return "🌧️";
+          case "Snow":
+            return "❄️";
+          case "Thunderstorm":
+            return "⛈️";
+          case "Drizzle":
+            return "🌦️";
+          case "Mist":
+          case "Fog":
+            return "🌫️";
+          default:
+            return "⛅";
+        }
+      }
+
+      function wtCapitalize(str) {
+        return str.charAt(0).toUpperCase() + str.slice(1);
+      }
+
+      // Get Live Location
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          (pos) => {
+            wtGetWeather(pos.coords.latitude, pos.coords.longitude);
+          },
+          () => {
+            document.getElementById("wt-location").textContent =
+              "Location denied";
+          }
+        );
+      } else {
+        document.getElementById("wt-location").textContent =
+          "Geolocation not supported";
+      }
+    </script>
+    <script>
+      const modal = document.getElementById("callModal");
+      const successPopup = document.getElementById("successPopup");
+
+      function openModal() {
+        modal.style.display = "flex";
+      }
+
+      function closeModal() {
+        modal.style.display = "none";
+      }
+
+      function scheduleCall() {
+        modal.style.display = "none";
+        successPopup.style.display = "block";
+        setTimeout(() => {
+          successPopup.style.display = "none";
+        }, 2000);
+      }
+    </script>
+    <script>
+      const carousel = document.querySelector(".carousel-images");
+      const images = document.querySelectorAll(".carousel-images img");
+      const dots = document.querySelectorAll(".dot");
+
+      let index = 0;
+      const total = images.length;
+
+      function showImage(i) {
+        index = (i + total) % total;
+        carousel.style.transform = `translateX(-${index * 100}%)`;
+        updateDots();
+      }
+
+      function updateDots() {
+        dots.forEach((dot, i) => {
+          dot.classList.toggle("active", i === index);
+        });
+      }
+
+      // Auto slide every 3 seconds
+      setInterval(() => showImage(index + 1), 3000);
+
+      // Dot click event
+      dots.forEach((dot, i) => {
+        dot.addEventListener("click", () => showImage(i));
+      });
+    </script>
+  </body>
+</html>

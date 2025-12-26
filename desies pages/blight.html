@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blight Disease - Plant Disease</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: #f9f9f9;
+      }
+
+      /*--------------navbar-------------------*/
+      .navbar {
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #ffffff;
+        border-bottom: 1px solid #ddd;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .navbar-left {
+        display: flex;
+        align-items: center;
+      }
+
+      .navbar-left img {
+        height: 40px;
+        width: 40px;
+        object-fit: cover;
+        margin-right: 10px;
+      }
+
+      .navbar-left h1 {
+        font-size: 20px;
+        color: #333;
+      }
+
+      @media (max-width: 600px) {
+        .navbar {
+          justify-content: center;
+        }
+
+        .navbar-left h1 {
+          font-size: 18px;
+        }
+      }
+
+      header {
+        text-align: center;
+        padding: 40px 20px;
+        background: linear-gradient(180deg, #e6f7ff, #ffe5b4);
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        color: #2d3748;
+      }
+
+      header p {
+        font-size: 1.2rem;
+        color: #4a5568;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: auto;
+        padding: 20px;
+      }
+
+      section {
+        margin-bottom: 40px;
+      }
+
+      section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+        color: #2c3e50;
+        border-left: 5px solid #ffd699;
+        padding-left: 10px;
+      }
+
+      section img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin: 15px 0;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+
+      th,
+      td {
+        padding: 12px 10px;
+        text-align: left;
+        border: 1px solid #ccc;
+      }
+
+      th {
+        background-color: #f0f0f0;
+        color: #000;
+      }
+
+      tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+
+      tbody tr:hover {
+        background-color: #e6f7ff;
+      }
+
+      ul {
+        margin-left: 20px;
+      }
+
+      @media (max-width: 768px) {
+        header h1 {
+          font-size: 2rem;
+        }
+        section h2 {
+          font-size: 1.5rem;
+        }
+        table,
+        th,
+        td {
+          font-size: 0.9rem;
+        }
+      }
+
+      .table-responsive {
+        overflow-x: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <img src="../plant esies/blight.webp" alt="Logo" />
+        <h1>Blight Disease</h1>
+      </div>
+    </nav>
+    <div class="container">
+      <section>
+        <h2>Introduction</h2>
+        <p>
+          Blight is a plant disease that causes rapid and extensive damage to
+          leaves, stems, and sometimes fruits. It is common in crops like
+          potatoes, tomatoes, and rice. Blight results in dark lesions, wilting,
+          and tissue death, leading to severe yield losses if not controlled.
+        </p>
+        <img
+          src="../plant esies/cure/blight.webp"
+          alt="Blight Infection on Plant Leaves"
+        />
+      </section>
+
+      <section>
+        <h2>Causes</h2>
+        <p>
+          Blight is caused by various fungal and bacterial pathogens such as
+          <em>Phytophthora infestans</em> (late blight of potato and tomato) and
+          <em>Xanthomonas oryzae</em> (bacterial blight of rice). Wet, humid,
+          and poorly drained conditions promote the rapid spread of blight
+          diseases.
+        </p>
+      </section>
+
+      <section>
+        <h2>Symptoms</h2>
+        <ul>
+          <li>Water-soaked dark spots on leaves and stems</li>
+          <li>Lesions expanding rapidly to cover large leaf areas</li>
+          <li>Leaves wilting, curling, and drying prematurely</li>
+          <li>Fruit rot and plant death in severe cases</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Prevention</h2>
+        <ul>
+          <li>Use disease-resistant crop varieties</li>
+          <li>Ensure proper drainage and avoid waterlogging</li>
+          <li>Practice crop rotation with non-host crops</li>
+          <li>Remove and destroy infected plant debris</li>
+          <li>Apply protective fungicides before disease onset</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Treatment</h2>
+        <ul>
+          <li>
+            Apply systemic fungicides such as metalaxyl, mancozeb, or
+            copper-based sprays
+          </li>
+          <li>Remove severely infected plants to reduce inoculum</li>
+          <li>Improve field hygiene and ensure balanced irrigation</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Fertilizers and Nutrition</h2>
+        <p>
+          Proper fertilization boosts plant immunity and reduces blight
+          severity. Balanced NPK fertilizers and micronutrients improve plant
+          resistance against stress and infection.
+        </p>
+        <img
+          src="../plant esies/cure/blight fertilzer.jpg"
+          alt="Fertilizers for Plant Health"
+        />
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Nutrient</th>
+                <th>Purpose</th>
+                <th>Application Tips</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Nitrogen (N)</td>
+                <td>Supports vegetative growth but excess favors blight</td>
+                <td>Apply in balanced doses, avoid overuse</td>
+              </tr>
+              <tr>
+                <td>Phosphorus (P)</td>
+                <td>Improves root strength and overall resistance</td>
+                <td>Apply at planting and early stages</td>
+              </tr>
+              <tr>
+                <td>Potassium (K)</td>
+                <td>Enhances stress tolerance and disease resistance</td>
+                <td>Maintain optimum levels during growth</td>
+              </tr>
+              <tr>
+                <td>Micronutrients (Zn, B, Mn, Mg)</td>
+                <td>Boost immunity and plant metabolism</td>
+                <td>Apply as foliar sprays or soil amendments</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2>Additional Tips</h2>
+        <ul>
+          <li>Inspect fields regularly for early blight symptoms</li>
+          <li>Plant certified disease-free seeds or seedlings</li>
+          <li>Maintain proper plant spacing for air circulation</li>
+          <li>Adopt integrated disease management strategies</li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>

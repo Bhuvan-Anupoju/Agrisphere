@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farming Dashboard</title>
+    <link rel="icon" href="../banners/logo main.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="nav-left">
+        <img src="../banners/logo main.png" alt="Logo" />
+        <div class="nav-text">
+          <span>Agri Sphere</span>
+          <span>Optimize & Maximize Yield</span>
+        </div>
+      </div>
+      <div class="nav-right">
+        <a href="../index.html">Home</a>
+        <a href="../e-quickmart-main/index.html">Shop Now</a>
+        <a href="../blog2-main/index.html">Explore Videos</a>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+    <div class="navbar-container">
+      <div class="half">
+        <a href="#shows">Yield Optimizers</a>
+      </div>
+      <div class="divider"></div>
+      <div class="half">
+        <a href="#Fertlizers">Fertilizes</a>
+      </div>
+    </div>
+
+    <!-- Calculators -->
+    <h2 style="margin: 20px; font-size: 25px" id="shows">Yield Optimizers</h2>
+    <div class="calculator-container">
+      <!-- Seed Requirement -->
+      <div class="card2" id="seedCard">
+        <h2>Seed Requirement Calculator</h2>
+        <form id="seedForm">
+          <label for="seedCrop">Crop Type</label>
+          <select id="seedCrop" required>
+            <option value="">--Select Crop--</option>
+            <option value="wheat">Wheat</option>
+            <option value="rice">Rice</option>
+            <option value="maize">Maize</option>
+          </select>
+          <label for="seedArea">Area (acres)</label>
+          <input
+            type="number"
+            id="seedArea"
+            placeholder="Enter area"
+            required
+          />
+          <label for="seedRate">Seed Rate (kg/acre)</label>
+          <input
+            type="number"
+            id="seedRate"
+            placeholder="Enter seed rate"
+            required
+          />
+          <button type="submit">Calculate Seeds</button>
+        </form>
+        <div class="result" id="seedResult"></div>
+      </div>
+      <!-- Fertilizer Optimizer -->
+      <div class="card2" id="fertilizerCard">
+        <h2>Fertilizer Optimizer</h2>
+        <form id="fertilizerForm">
+          <label for="crop">Crop Type</label>
+          <select id="crop" required>
+            <option value="">--Select Crop--</option>
+            <option value="wheat">Wheat</option>
+            <option value="rice">Rice</option>
+            <option value="maize">Maize</option>
+            <option value="cotton">Cotton</option>
+            <option value="vegetables">Vegetables</option>
+          </select>
+          <label for="soil">Soil Type</label>
+          <select id="soil" required>
+            <option value="">--Select Soil--</option>
+            <option value="clay">Clay</option>
+            <option value="sandy">Sandy</option>
+            <option value="loamy">Loamy</option>
+            <option value="black">Black Soil</option>
+          </select>
+          <label for="area">Farm Area (acres)</label>
+          <input type="number" id="area" placeholder="Enter area" required />
+          <button type="submit">Optimize Fertilizer</button>
+        </form>
+        <div class="result" id="fertilizerResult"></div>
+      </div>
+
+      <!-- Water Requirement -->
+      <div class="card2" id="waterCard">
+        <h2>Water Requirement Calculator</h2>
+        <form id="waterForm">
+          <label for="waterCrop">Crop Type</label>
+          <select id="waterCrop" required>
+            <option value="">--Select Crop--</option>
+            <option value="wheat">Wheat</option>
+            <option value="rice">Rice</option>
+          </select>
+          <label for="waterArea">Area (acres)</label>
+          <input
+            type="number"
+            id="waterArea"
+            placeholder="Enter area"
+            required
+          />
+          <label for="waterReq">Water Requirement (liters/acre)</label>
+          <input
+            type="number"
+            id="waterReq"
+            placeholder="Enter liters per acre"
+            required
+          />
+          <button type="submit">Calculate Water</button>
+        </form>
+        <div class="result" id="waterResult"></div>
+      </div>
+
+      <!-- Fertilizer Cost -->
+      <div class="card2" id="costCard">
+        <h2>Fertilizer Cost Calculator</h2>
+        <form id="costForm">
+          <label for="fertAmt">Fertilizer Amount (kg)</label>
+          <input
+            type="number"
+            id="fertAmt"
+            placeholder="Enter amount"
+            required
+          />
+          <label for="fertRate">Cost per kg (₹)</label>
+          <input
+            type="number"
+            id="fertRate"
+            placeholder="Enter cost per kg"
+            required
+          />
+          <button type="submit">Calculate Cost</button>
+        </form>
+        <div class="result" id="costResult"></div>
+      </div>
+
+      <!-- Pesticide Dosage -->
+      <div class="card2" id="pesticideCard">
+        <h2>Pesticide Dosage Calculator</h2>
+        <form id="pesticideForm">
+          <label for="pestArea">Area (acres)</label>
+          <input
+            type="number"
+            id="pestArea"
+            placeholder="Enter area"
+            required
+          />
+          <label for="pestConc">Pesticide Concentration (%)</label>
+          <input
+            type="number"
+            id="pestConc"
+            placeholder="Enter concentration"
+            required
+          />
+          <button type="submit">Calculate Dosage</button>
+        </form>
+        <div class="result" id="pestResult"></div>
+      </div>
+      <!-- Yield Estimator -->
+      <div class="card2" id="yieldCard">
+        <h2>Yield Estimator</h2>
+        <form id="yieldForm">
+          <label for="yieldArea">Area (acres)</label>
+          <input
+            type="number"
+            id="yieldArea"
+            placeholder="Enter area"
+            required
+          />
+          <label for="prodPerAcre">Expected Production (kg/acre)</label>
+          <input
+            type="number"
+            id="prodPerAcre"
+            placeholder="Enter production per acre"
+            required
+          />
+          <button type="submit">Estimate Yield</button>
+        </form>
+        <div class="result" id="yieldResult"></div>
+      </div>
+    </div>
+    <h2 style="margin: 20px; font-size: 25px" id="Fertlizers">Fertlizers</h2>
+    <!-- Fertilizer Cards -->
+    <div class="container">
+      <div class="card">
+        <img src="images/urea2.jpg" alt="Urea" />
+        <div class="card-content">
+          <h3>Urea</h3>
+          <p><strong>Soil:</strong> Suitable for all soils.</p>
+          <p><strong>Crops:</strong> Wheat, Rice, Maize.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/dap.jpg" alt="DAP" />
+        <div class="card-content">
+          <h3>DAP</h3>
+          <p><strong>Soil:</strong> Loamy, Black soils.</p>
+          <p><strong>Crops:</strong> Cotton, Maize, Vegetables.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/mop.png" alt="MOP" />
+        <div class="card-content">
+          <h3>MOP</h3>
+          <p><strong>Soil:</strong> Sandy, Clay.</p>
+          <p><strong>Crops:</strong> Sugarcane, Banana, Potatoes.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/Ammonium Sulfate.png" alt="Ammonium Sulfate" />
+        <div class="card-content">
+          <h3>Ammonium Sulfate</h3>
+          <p><strong>Soil:</strong> Alkaline soils.</p>
+          <p><strong>Crops:</strong> Rice, Wheat.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="images/SSP-Single-Super-Phosphate.webp"
+          alt="Superphosphate"
+        />
+        <div class="card-content">
+          <h3>Single Superphosphate</h3>
+          <p><strong>Soil:</strong> Acidic soils.</p>
+          <p><strong>Crops:</strong> Oilseeds, Pulses.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/zinc.jpeg" alt="Zinc Sulfate" />
+        <div class="card-content">
+          <h3>Zinc Sulfate</h3>
+          <p><strong>Soil:</strong> Zinc-deficient soils.</p>
+          <p><strong>Crops:</strong> Rice, Wheat, Maize.</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleMenu() {
+        document.querySelector(".nav-right").classList.toggle("active");
+      }
+
+      const fertilizerData = {
+        wheat: { N: 120, P: 60, K: 40 },
+        rice: { N: 100, P: 50, K: 50 },
+        maize: { N: 150, P: 75, K: 60 },
+        cotton: { N: 90, P: 60, K: 45 },
+        vegetables: { N: 80, P: 40, K: 40 },
+        sugarcane: { N: 200, P: 80, K: 120 },
+        banana: { N: 180, P: 90, K: 150 },
+        potato: { N: 160, P: 70, K: 100 },
+        soybean: { N: 30, P: 60, K: 40 },
+        pulses: { N: 25, P: 50, K: 20 },
+        oilseeds: { N: 40, P: 60, K: 30 },
+        groundnut: { N: 30, P: 60, K: 40 },
+        tea: { N: 100, P: 50, K: 70 },
+        coffee: { N: 120, P: 60, K: 80 },
+        tobacco: { N: 80, P: 50, K: 70 },
+        sunflower: { N: 60, P: 60, K: 40 },
+        barley: { N: 90, P: 40, K: 40 },
+        millets: { N: 70, P: 40, K: 30 },
+        tomato: { N: 120, P: 60, K: 60 },
+        onion: { N: 100, P: 50, K: 50 },
+        garlic: { N: 90, P: 50, K: 40 },
+        cabbage: { N: 100, P: 50, K: 60 },
+        cauliflower: { N: 95, P: 55, K: 50 },
+        carrot: { N: 80, P: 40, K: 40 },
+        brinjal: { N: 100, P: 50, K: 60 },
+        capsicum: { N: 90, P: 45, K: 50 },
+        chili: { N: 85, P: 45, K: 45 },
+        coriander: { N: 70, P: 35, K: 30 },
+        mint: { N: 60, P: 30, K: 30 },
+        lettuce: { N: 60, P: 30, K: 30 },
+        okra: { N: 90, P: 50, K: 40 },
+        pumpkin: { N: 80, P: 40, K: 50 },
+        watermelon: { N: 90, P: 45, K: 50 },
+        muskmelon: { N: 85, P: 40, K: 45 },
+        apple: { N: 100, P: 60, K: 50 },
+        mango: { N: 120, P: 60, K: 60 },
+        grapes: { N: 100, P: 50, K: 50 },
+        pomegranate: { N: 80, P: 40, K: 40 },
+        pear: { N: 90, P: 45, K: 45 },
+        plum: { N: 85, P: 40, K: 40 },
+        cherry: { N: 80, P: 40, K: 40 },
+        strawberry: { N: 70, P: 35, K: 35 },
+        blackberry: { N: 60, P: 30, K: 30 },
+        raspberry: { N: 65, P: 30, K: 35 },
+        apricot: { N: 80, P: 40, K: 40 },
+        peach: { N: 85, P: 45, K: 45 },
+        fig: { N: 90, P: 50, K: 50 },
+      };
+
+      // Fertilizer Optimizer
+      document
+        .getElementById("fertilizerForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const crop = document.getElementById("crop").value;
+          const soil = document.getElementById("soil").value;
+          const area = parseFloat(document.getElementById("area").value);
+          if (!fertilizerData[crop]) {
+            document.getElementById("fertilizerResult").innerHTML =
+              "❌ Data not available for this crop.";
+            return;
+          }
+          const { N, P, K } = fertilizerData[crop];
+          document.getElementById("fertilizerResult").innerHTML = `
+      <p>For ${area} acres of <b>${crop}</b> on ${soil} soil:</p>
+      <table>
+        <tr><th>Nutrient</th><th>Per Acre (kg)</th><th>Total (kg)</th></tr>
+        <tr><td>Nitrogen</td><td>${N}</td><td>${N * area}</td></tr>
+        <tr><td>Phosphorus</td><td>${P}</td><td>${P * area}</td></tr>
+        <tr><td>Potassium</td><td>${K}</td><td>${K * area}</td></tr>
+      </table>`;
+        });
+      // Seed Calculator
+      document
+        .getElementById("seedForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const area = parseFloat(document.getElementById("seedArea").value);
+          const rate = parseFloat(document.getElementById("seedRate").value);
+          const totalSeeds = area * rate;
+          document.getElementById(
+            "seedResult"
+          ).innerHTML = `Total seeds required: <b>${totalSeeds} kg</b>`;
+        });
+
+      // Water Calculator
+      document
+        .getElementById("waterForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const area = parseFloat(document.getElementById("waterArea").value);
+          const requirement = parseFloat(
+            document.getElementById("waterReq").value
+          ); // Corrected ID
+          const totalWater = area * requirement;
+          document.getElementById(
+            "waterResult"
+          ).innerHTML = `Total water required: <b>${totalWater} liters</b>`;
+        });
+
+      // Fertilizer Cost Calculator
+      document
+        .getElementById("costForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const amount = parseFloat(document.getElementById("fertAmt").value); // Corrected ID
+          const rate = parseFloat(document.getElementById("fertRate").value); // Corrected ID
+          const totalCost = amount * rate;
+          document.getElementById(
+            "costResult"
+          ).innerHTML = `Total fertilizer cost: <b>₹${totalCost}</b>`;
+        });
+
+      // Pesticide Dosage
+      document
+        .getElementById("pesticideForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const area = parseFloat(document.getElementById("pestArea").value);
+          const conc = parseFloat(document.getElementById("pestConc").value);
+          document.getElementById(
+            "pestResult"
+          ).innerText = `Total pesticide required: ${area * conc * 10} liters`;
+        });
+
+      // Yield Estimator
+      document
+        .getElementById("yieldForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const area = parseFloat(document.getElementById("yieldArea").value);
+          const prod = parseFloat(document.getElementById("prodPerAcre").value);
+          document.getElementById(
+            "yieldResult"
+          ).innerText = `Estimated total yield: ${area * prod} kg`;
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rust Disease - Plant Disease</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: #f9f9f9;
+      }
+
+      /*--------------navbar-------------------*/
+      .navbar {
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #ffffff;
+        border-bottom: 1px solid #ddd;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .navbar-left {
+        display: flex;
+        align-items: center;
+      }
+
+      .navbar-left img {
+        height: 40px;
+        width: 40px;
+        object-fit: cover;
+        margin-right: 10px;
+      }
+
+      .navbar-left h1 {
+        font-size: 20px;
+        color: #333;
+      }
+
+      @media (max-width: 600px) {
+        .navbar {
+          justify-content: center;
+        }
+
+        .navbar-left h1 {
+          font-size: 18px;
+        }
+      }
+
+      header {
+        text-align: center;
+        padding: 40px 20px;
+        background: linear-gradient(180deg, #e6f7ff, #ffe5b4);
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        color: #2d3748;
+      }
+
+      header p {
+        font-size: 1.2rem;
+        color: #4a5568;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: auto;
+        padding: 20px;
+      }
+
+      section {
+        margin-bottom: 40px;
+      }
+
+      section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+        color: #2c3e50;
+        border-left: 5px solid #ffd699;
+        padding-left: 10px;
+      }
+
+      section img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin: 15px 0;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+
+      th,
+      td {
+        padding: 12px 10px;
+        text-align: left;
+        border: 1px solid #ccc;
+      }
+
+      th {
+        background-color: #f0f0f0;
+        color: #000;
+      }
+
+      tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+
+      tbody tr:hover {
+        background-color: #e6f7ff;
+      }
+
+      ul {
+        margin-left: 20px;
+      }
+
+      @media (max-width: 768px) {
+        header h1 {
+          font-size: 2rem;
+        }
+        section h2 {
+          font-size: 1.5rem;
+        }
+        table,
+        th,
+        td {
+          font-size: 0.9rem;
+        }
+      }
+
+      .table-responsive {
+        overflow-x: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <img src="../plant esies/rust.webp" alt="Logo" />
+        <h1>Rust Disease</h1>
+      </div>
+    </nav>
+    <div class="container">
+      <section>
+        <h2>Introduction</h2>
+        <p>
+          Rust is a fungal disease that affects many crops such as wheat, beans,
+          coffee, and maize. It is named for the reddish-brown pustules it forms
+          on leaves and stems. Severe infections can reduce photosynthesis,
+          weaken plants, and drastically reduce yields.
+        </p>
+        <img
+          src="../plant esies/cure/rust.webp"
+          alt="Rust Infection on Plant Leaves"
+        />
+      </section>
+
+      <section>
+        <h2>Causes</h2>
+        <p>
+          Rust is caused by various species of fungi, including
+          <em>Puccinia</em>. The spores spread easily by wind, rain, insects,
+          and human activity. Warm, moist, and humid conditions favor the spread
+          of rust fungi.
+        </p>
+      </section>
+
+      <section>
+        <h2>Symptoms</h2>
+        <ul>
+          <li>
+            Small yellow, orange, or reddish-brown pustules on leaves and stems
+          </li>
+          <li>Premature yellowing and drying of leaves</li>
+          <li>Reduced photosynthesis and stunted growth</li>
+          <li>In severe cases, plant death and yield loss</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Prevention</h2>
+        <ul>
+          <li>Use resistant crop varieties whenever available</li>
+          <li>Practice crop rotation to break the disease cycle</li>
+          <li>Remove and destroy infected plant residues</li>
+          <li>Ensure proper plant spacing for good air circulation</li>
+          <li>Avoid overhead irrigation during high humidity periods</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Treatment</h2>
+        <ul>
+          <li>
+            Apply fungicides like triazoles or strobilurins at early stages
+          </li>
+          <li>Remove heavily infected plants to reduce spore spread</li>
+          <li>Improve field hygiene and sanitation</li>
+          <li>Monitor fields regularly to apply control measures on time</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Fertilizers and Nutrition</h2>
+        <p>
+          Healthy, well-nourished plants are more tolerant to rust infections.
+          Balanced fertilization with NPK and essential micronutrients supports
+          plant defense mechanisms.
+        </p>
+        <img
+          src="../plant esies/cure/rust fertlizer.jpg"
+          alt="Fertilizers for Plant Health"
+        />
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Nutrient</th>
+                <th>Purpose</th>
+                <th>Application Tips</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Nitrogen (N)</td>
+                <td>
+                  Supports leaf growth but excess can worsen rust severity
+                </td>
+                <td>Apply in recommended doses, avoid overuse</td>
+              </tr>
+              <tr>
+                <td>Phosphorus (P)</td>
+                <td>Strengthens roots and improves plant resistance</td>
+                <td>Apply during planting and early growth</td>
+              </tr>
+              <tr>
+                <td>Potassium (K)</td>
+                <td>Increases disease tolerance and stress resistance</td>
+                <td>Apply regularly to maintain sufficient levels</td>
+              </tr>
+              <tr>
+                <td>Micronutrients (Zn, Mn, Mg, B)</td>
+                <td>Boost immunity and metabolic activity</td>
+                <td>Use foliar sprays or soil application as needed</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2>Additional Tips</h2>
+        <ul>
+          <li>Inspect fields frequently for early signs of rust</li>
+          <li>Plant rust-resistant crop varieties where possible</li>
+          <li>Remove volunteer plants that may host rust fungi</li>
+          <li>Adopt integrated pest and disease management practices</li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>

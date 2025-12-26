@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agri Sphere Footer</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .footer {
+        background: whitesmoke; /* Farm green */
+        color: black;
+        padding: 40px 20px 10px;
+        text-align: center;
+      }
+
+      .footer .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .footer .logo img {
+        width: 70px;
+        height: auto;
+        margin-bottom: 10px;
+      }
+
+      .footer .quote {
+        font-size: 14px;
+        margin-top: 5px;
+      }
+
+      .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 20px;
+        gap: 40px;
+      }
+
+      .footer-section {
+        text-align: left;
+        min-width: 150px;
+      }
+
+      .footer-section h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        display: inline-block;
+        padding-bottom: 5px;
+      }
+
+      .footer-section p {
+        margin: 4px 0;
+        font-size: 14px;
+        text-align: center;
+      }
+
+      .social-icons {
+        margin: 15px 0;
+      }
+
+      .social-icons a {
+        margin: 0 10px;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .social-icons img {
+        width: 28px;
+        height: 28px;
+        filter: brightness(0) invert(1); /* White icons */
+        transition: transform 0.3s;
+      }
+
+      .social-icons img:hover {
+        transform: scale(1.1);
+      }
+
+      .footer-bottom {
+        margin-top: 20px;
+        font-size: 13px;
+        border-top: 1px solid rgba(255, 255, 255, 0.4);
+        padding-top: 10px;
+      }
+
+      @media (max-width: 600px) {
+        .footer-content {
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+        }
+        .footer-section {
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <footer class="footer">
+      <div class="logo">
+        <img src="banners/logo main.png" alt="Agri Sphere Logo" />
+        <h2>Agri Sphere</h2>
+        <p class="quote">Grow Smarter, Farm Better</p>
+      </div>
+
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Website Developers</h3>
+          <p>Bhuvan A</p>
+          <p>Mahesh K</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Graphic Designers</h3>
+          <p>Anusha A</p>
+          <p>Mounika G</p>
+          <p>Ramya P</p>
+          <p>Charan P</p>
+        </div>
+      </div>
+
+      <div class="social-icons">
+        <a href="#"><img src="youtube.png" alt="YouTube" /></a>
+        <a href="#"><img src="gmail.png" alt="Gmail" /></a>
+        <a href="#"><img src="instagram.png" alt="Instagram" /></a>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2025 Agri Sphere. All Rights Reserved.
+      </div>
+    </footer>
+  </body>
+</html>

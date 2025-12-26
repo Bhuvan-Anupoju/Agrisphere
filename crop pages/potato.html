@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Potato Crop</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: #f9f9f9;
+      }
+      .navbar {
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #ffffff;
+        border-bottom: 1px solid #ddd;
+        position: sticky; /* makes it stick */
+        top: 0;
+        z-index: 1000; /* stay above content */
+      }
+
+      /* Logo + text */
+      .navbar-left {
+        display: flex;
+        align-items: center;
+      }
+
+      .navbar-left img {
+        height: 40px;
+        width: 40px;
+        object-fit: cover;
+        margin-right: 10px;
+      }
+
+      .navbar-left h1 {
+        font-size: 20px;
+        color: #333;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 600px) {
+        .navbar {
+          justify-content: center; /* center logo + text on small screens */
+        }
+
+        .navbar-left h1 {
+          font-size: 18px;
+        }
+      }
+      header {
+        text-align: center;
+        padding: 40px 20px;
+        background: linear-gradient(180deg, #e6f7ff, #ffe5b4);
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        color: #2d3748;
+      }
+
+      header p {
+        font-size: 1.2rem;
+        color: #4a5568;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: auto;
+        padding: 20px;
+      }
+
+      section {
+        margin-bottom: 40px;
+      }
+
+      section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+        color: #2c3e50;
+        border-left: 5px solid #ffd699;
+        padding-left: 10px;
+      }
+
+      section img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin: 15px 0;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid #ccc;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f0f0f0;
+      }
+
+      @media (max-width: 768px) {
+        header h1 {
+          font-size: 2rem;
+        }
+        section h2 {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <img src="../crop images/Potato crop/logo.webp" alt="Logo" />
+        <h1>Potato Crop Manual</h1>
+      </div>
+    </nav>
+    <div class="container">
+      <section>
+        <h2>Introduction</h2>
+        <p>
+          Potato is a widely cultivated tuber crop valued for its edible
+          underground tubers. It grows best in cool climates with well-drained,
+          fertile soil. Proper care including irrigation, fertilization, and
+          pest management ensures high yield and good tuber quality.
+        </p>
+        <img
+          src="../crop images/Potato crop/potato plantation.webp"
+          alt="Potato Field"
+        />
+      </section>
+
+      <section>
+        <h2>Soil Requirements</h2>
+        <p>
+          Potato grows well in light, well-drained loamy soils rich in organic
+          matter. Slightly acidic soils (pH 5.5–6.5) are ideal for tuber
+          development.
+        </p>
+        <ul>
+          <li>Soil Type: Loamy, sandy loam</li>
+          <li>Soil pH: 5.5–6.5</li>
+          <li>Organic Matter: 2–4% recommended</li>
+        </ul>
+        <img
+          src="../crop images/Potato crop/potato soil.webp"
+          alt="Potato Soil"
+        />
+      </section>
+
+      <section>
+        <h2>Water Requirements</h2>
+        <p>
+          Potato requires regular irrigation, especially during tuber initiation
+          and growth. Overwatering must be avoided to prevent rotting and fungal
+          diseases.
+        </p>
+        <ul>
+          <li>Water Requirement: 500–700 mm per growing season</li>
+          <li>Irrigation Method: Furrow or drip irrigation</li>
+          <li>Water Level: Maintain moist soil, avoid waterlogging</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Growth Duration</h2>
+        <p>The duration of potato growth depends on the variety:</p>
+        <table>
+          <tr>
+            <th>Variety</th>
+            <th>Duration</th>
+          </tr>
+          <tr>
+            <td>Early</td>
+            <td>75–90 days</td>
+          </tr>
+          <tr>
+            <td>Medium</td>
+            <td>90–120 days</td>
+          </tr>
+          <tr>
+            <td>Late</td>
+            <td>120–150 days</td>
+          </tr>
+        </table>
+        <p>
+          Timely field monitoring and proper care are necessary to achieve
+          optimal yield.
+        </p>
+      </section>
+
+      <section>
+        <h2>Fertilizers and Nutrient Management</h2>
+        <p>
+          Balanced fertilization is essential for high yield and tuber quality.
+          Organic manure improves soil fertility, while chemical fertilizers
+          supply essential nutrients:
+        </p>
+        <table>
+          <tr>
+            <th>Nutrient</th>
+            <th>Recommended Quantity</th>
+          </tr>
+          <tr>
+            <td>Nitrogen (N)</td>
+            <td>120–150 kg/ha (split doses)</td>
+          </tr>
+          <tr>
+            <td>Phosphorus (P₂O₅)</td>
+            <td>50–60 kg/ha</td>
+          </tr>
+          <tr>
+            <td>Potassium (K₂O)</td>
+            <td>100–150 kg/ha</td>
+          </tr>
+          <tr>
+            <td>Organic Manure</td>
+            <td>10–15 tons/ha</td>
+          </tr>
+        </table>
+        <img
+          src="../crop images/Potato crop/fertilizer.webp"
+          alt="Fertilizers for Potato"
+        />
+      </section>
+
+      <section>
+        <h2>Pest and Disease Management</h2>
+        <p>
+          Potato plants are susceptible to pests and diseases. Proper management
+          ensures healthy plants and good tuber production:
+        </p>
+        <ul>
+          <li>
+            Common pests: Potato tuber moth, Aphids, Colorado potato beetle
+          </li>
+          <li>Diseases: Late blight, Early blight, Bacterial wilt</li>
+          <li>
+            Control methods: Integrated Pest Management (IPM), crop rotation,
+            resistant varieties, proper irrigation
+          </li>
+          <li>
+            Recommended pesticides (use as per guidelines): Mancozeb,
+            Imidacloprid
+          </li>
+        </ul>
+        <img
+          src="../crop images/Potato crop/potato pest.webp"
+          alt="Pest Management in Potato"
+        />
+      </section>
+
+      <section>
+        <h2>Harvesting</h2>
+        <p>
+          Potatoes are harvested when the plants have matured and the tuber
+          skins have hardened. Proper harvesting and post-harvest handling
+          ensure minimal damage and longer storage life.
+        </p>
+        <ul>
+          <li>Harvesting Time: 75–150 days depending on variety</li>
+          <li>
+            Post-harvest Handling: Curing, cleaning, and storage in cool, dry
+            conditions
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>

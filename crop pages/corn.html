@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Corn Crop</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: #f9f9f9;
+      }
+      .navbar {
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #ffffff;
+        border-bottom: 1px solid #ddd;
+        position: sticky; /* makes it stick */
+        top: 0;
+        z-index: 1000; /* stay above content */
+      }
+
+      /* Logo + text */
+      .navbar-left {
+        display: flex;
+        align-items: center;
+      }
+
+      .navbar-left img {
+        height: 40px;
+        width: 40px;
+        object-fit: cover;
+        margin-right: 10px;
+      }
+
+      .navbar-left h1 {
+        font-size: 20px;
+        color: #333;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 600px) {
+        .navbar {
+          justify-content: center; /* center logo + text on small screens */
+        }
+
+        .navbar-left h1 {
+          font-size: 18px;
+        }
+      }
+
+      header {
+        text-align: center;
+        padding: 40px 20px;
+        background: linear-gradient(180deg, #e6f7ff, #ffe5b4);
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        color: #2d3748;
+      }
+
+      header p {
+        font-size: 1.2rem;
+        color: #4a5568;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: auto;
+        padding: 20px;
+      }
+
+      section {
+        margin-bottom: 40px;
+      }
+
+      section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+        color: #2c3e50;
+        border-left: 5px solid #ffd699;
+        padding-left: 10px;
+      }
+
+      section img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin: 15px 0;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid #ccc;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f0f0f0;
+      }
+
+      @media (max-width: 768px) {
+        header h1 {
+          font-size: 2rem;
+        }
+        section h2 {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <img src="../crop images/corn crop/logo.webp" alt="Logo" />
+        <h1>Corn Crop Manual</h1>
+      </div>
+    </nav>
+    <div class="container">
+      <section>
+        <h2>Introduction</h2>
+        <p>
+          Corn, also called maize, is a major cereal crop grown worldwide for
+          food, feed, and industrial purposes. It thrives in warm climates with
+          fertile soils and adequate rainfall. Proper management of soil,
+          irrigation, nutrients, and pests ensures high yield.
+        </p>
+        <img
+          src="../crop images/corn crop/corn plantation.webp"
+          alt="Corn Field"
+        />
+      </section>
+
+      <section>
+        <h2>Soil Requirements</h2>
+        <p>
+          Corn grows best in well-drained, fertile loamy soils with good organic
+          matter content. Neutral to slightly acidic soils (pH 5.8–7.0) promote
+          healthy growth.
+        </p>
+        <ul>
+          <li>Soil Type: Loamy, sandy loam</li>
+          <li>Soil pH: 5.8–7.0</li>
+          <li>Organic Matter: 2–4% recommended</li>
+        </ul>
+        <img src="../crop images/corn crop/corn soil.webp" alt="Corn Soil" />
+      </section>
+
+      <section>
+        <h2>Water Requirements</h2>
+        <p>
+          Corn requires regular watering, especially during germination,
+          tasseling, and grain filling stages. Both rainfed and irrigated
+          conditions can be used depending on climate.
+        </p>
+        <ul>
+          <li>Water Requirement: 500–800 mm per growing season</li>
+          <li>Irrigation Method: Furrow or sprinkler irrigation</li>
+          <li>
+            Water Level: Maintain moist soil during critical growth stages
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Growth Duration</h2>
+        <p>
+          The duration of corn growth depends on the variety and climatic
+          conditions:
+        </p>
+        <table>
+          <tr>
+            <th>Variety</th>
+            <th>Duration</th>
+          </tr>
+          <tr>
+            <td>Short-duration</td>
+            <td>90–100 days</td>
+          </tr>
+          <tr>
+            <td>Medium-duration</td>
+            <td>100–120 days</td>
+          </tr>
+          <tr>
+            <td>Long-duration</td>
+            <td>120–150 days</td>
+          </tr>
+        </table>
+        <p>
+          Timely field monitoring and management practices help achieve optimal
+          yield.
+        </p>
+      </section>
+
+      <section>
+        <h2>Fertilizers and Nutrient Management</h2>
+        <p>
+          Balanced fertilization is essential for corn growth and productivity.
+          Organic manure improves soil fertility, while chemical fertilizers
+          supply necessary nutrients:
+        </p>
+        <table>
+          <tr>
+            <th>Nutrient</th>
+            <th>Recommended Quantity</th>
+          </tr>
+          <tr>
+            <td>Nitrogen (N)</td>
+            <td>120–150 kg/ha (split doses)</td>
+          </tr>
+          <tr>
+            <td>Phosphorus (P₂O₅)</td>
+            <td>60–80 kg/ha</td>
+          </tr>
+          <tr>
+            <td>Potassium (K₂O)</td>
+            <td>60–80 kg/ha</td>
+          </tr>
+          <tr>
+            <td>Organic Manure</td>
+            <td>5–10 tons/ha</td>
+          </tr>
+        </table>
+        <img
+          src="../crop images/corn crop/fertilizers.webp"
+          alt="Fertilizers for Corn"
+        />
+      </section>
+
+      <section>
+        <h2>Pest and Disease Management</h2>
+        <p>
+          Corn is vulnerable to various pests and diseases. Proper management is
+          essential for high yield:
+        </p>
+        <ul>
+          <li>Common pests: Stem borer, Fall armyworm, Aphids</li>
+          <li>Diseases: Leaf blight, Rust, Smut</li>
+          <li>
+            Control methods: Integrated Pest Management (IPM), resistant
+            varieties, crop rotation
+          </li>
+          <li>
+            Recommended pesticides (use as per guidelines): Chlorpyrifos,
+            Emamectin benzoate
+          </li>
+        </ul>
+        <img
+          src="../crop images/corn crop/corn-pests.jpg"
+          alt="Pest Management in Corn"
+        />
+      </section>
+
+      <section>
+        <h2>Harvesting</h2>
+        <p>
+          Corn is harvested when the grains are fully mature and dry. Proper
+          harvesting ensures maximum grain yield and quality. Post-harvest
+          handling includes drying, storage, and transportation.
+        </p>
+        <ul>
+          <li>Harvesting Time: 90–150 days depending on variety</li>
+          <li>
+            Post-harvest Handling: Drying, threshing, and storage in dry
+            conditions
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>

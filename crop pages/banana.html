@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Banana Crop</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: #f9f9f9;
+      }
+      /* Navbar container */
+      .navbar {
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #ffffff;
+        border-bottom: 1px solid #ddd;
+        position: sticky; /* makes it stick */
+        top: 0;
+        z-index: 1000; /* stay above content */
+      }
+
+      /* Logo + text */
+      .navbar-left {
+        display: flex;
+        align-items: center;
+      }
+
+      .navbar-left img {
+        height: 40px;
+        width: 40px;
+        object-fit: cover;
+        margin-right: 10px;
+      }
+
+      .navbar-left h1 {
+        font-size: 20px;
+        color: #333;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 600px) {
+        .navbar {
+          justify-content: center; /* center logo + text on small screens */
+        }
+
+        .navbar-left h1 {
+          font-size: 18px;
+        }
+      }
+      header {
+        text-align: center;
+        padding: 40px 20px;
+        background: linear-gradient(180deg, #e6f7ff, #ffe5b4);
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        color: #2d3748;
+      }
+
+      header p {
+        font-size: 1.2rem;
+        color: #4a5568;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: auto;
+        padding: 20px;
+      }
+
+      section {
+        margin-bottom: 40px;
+      }
+
+      section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+        color: #2c3e50;
+        border-left: 5px solid #ffd699;
+        padding-left: 10px;
+      }
+
+      section img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin: 15px 0;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid #ccc;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f0f0f0;
+      }
+
+      @media (max-width: 768px) {
+        header h1 {
+          font-size: 2rem;
+        }
+        section h2 {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <img src="../crop images/banana crop/logo4.png" alt="Logo" />
+        <h1>Banana Crop Manual</h1>
+      </div>
+    </nav>
+
+    <div class="container">
+      <section>
+        <h2>Introduction</h2>
+        <p>
+          Banana is one of the most important fruit crops grown in tropical and
+          subtropical regions. It is cultivated for its nutritious fruits that
+          are rich in carbohydrates, vitamins, and minerals. Bananas are used
+          for direct consumption, processing, and medicinal purposes.
+        </p>
+        <img
+          src="../crop images/banana crop/banana plantation.jpg"
+          alt="Banana Plantation"
+        />
+      </section>
+
+      <section>
+        <h2>Soil Requirements</h2>
+        <p>
+          Bananas grow best in deep, rich, well-drained loamy soils with high
+          organic matter. The crop prefers soils with good water-holding
+          capacity and neutral pH (6.0–7.5).
+        </p>
+        <ul>
+          <li>Soil Type: Loamy, alluvial soils</li>
+          <li>Soil pH: 6.0–7.5</li>
+          <li>Organic Matter: High content recommended</li>
+        </ul>
+        <img
+          src="../crop images/banana crop/banana soil.png"
+          alt="Banana Soil"
+        />
+      </section>
+
+      <section>
+        <h2>Water Requirements</h2>
+        <p>
+          Banana is a water-loving plant and requires abundant moisture for good
+          growth and fruit development. Regular irrigation is essential,
+          especially during dry periods.
+        </p>
+        <ul>
+          <li>Water Requirement: 1200–2200 mm per year</li>
+          <li>Irrigation Method: Drip or basin irrigation</li>
+          <li>
+            Water Level: Soil should be kept consistently moist, avoid
+            waterlogging
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Growth Duration</h2>
+        <p>
+          Banana is a medium to long-duration crop. Depending on the variety and
+          growing conditions, it takes:
+        </p>
+        <table>
+          <tr>
+            <th>Variety</th>
+            <th>Duration</th>
+          </tr>
+          <tr>
+            <td>Dwarf varieties</td>
+            <td>10–12 months</td>
+          </tr>
+          <tr>
+            <td>Medium varieties</td>
+            <td>12–14 months</td>
+          </tr>
+          <tr>
+            <td>Tall varieties</td>
+            <td>14–16 months</td>
+          </tr>
+        </table>
+        <p>
+          Timely irrigation, proper nutrition, and pest control are important to
+          achieve optimum yield.
+        </p>
+      </section>
+
+      <section>
+        <h2>Fertilizers and Nutrient Management</h2>
+        <p>
+          Banana is a heavy feeder and requires adequate nutrition throughout
+          its growth cycle. Both organic manure and chemical fertilizers play a
+          vital role in productivity:
+        </p>
+        <table>
+          <tr>
+            <th>Nutrient</th>
+            <th>Recommended Quantity</th>
+          </tr>
+          <tr>
+            <td>Nitrogen (N)</td>
+            <td>200–250 kg/ha</td>
+          </tr>
+          <tr>
+            <td>Phosphorus (P₂O₅)</td>
+            <td>60–70 kg/ha</td>
+          </tr>
+          <tr>
+            <td>Potassium (K₂O)</td>
+            <td>200–300 kg/ha</td>
+          </tr>
+          <tr>
+            <td>Organic Manure</td>
+            <td>10–15 tons/ha</td>
+          </tr>
+        </table>
+        <img
+          src="../crop images/banana crop/banana fertilizer.jpg"
+          alt="Fertilizers for Banana"
+        />
+      </section>
+
+      <section>
+        <h2>Pest and Disease Management</h2>
+        <p>
+          Banana plants are prone to several pests and diseases. Proper
+          management ensures healthy plants and good yields:
+        </p>
+        <ul>
+          <li>Common pests: Banana weevil, Aphids, Thrips</li>
+          <li>Diseases: Panama wilt, Bunchy top, Sigatoka leaf spot</li>
+          <li>
+            Control methods: Integrated Pest Management (IPM), crop rotation,
+            resistant varieties, and proper field sanitation
+          </li>
+          <li>
+            Recommended pesticides (use as per guidelines): Carbofuran,
+            Mancozeb, Copper oxychloride
+          </li>
+        </ul>
+        <img
+          src="../crop images/banana crop/banana pest.jpg"
+          alt="Pest Management in Banana"
+        />
+      </section>
+
+      <section>
+        <h2>Harvesting</h2>
+        <p>
+          Bananas are harvested when the fruits are mature but still green.
+          Harvesting time depends on the variety and growing conditions. Proper
+          handling after harvest ensures better shelf life and market value.
+        </p>
+        <ul>
+          <li>
+            Harvesting Time: 11–15 months after planting depending on variety
+          </li>
+          <li>
+            Post-harvest Handling: Dehanding, grading, cleaning, and storage at
+            cool temperatures
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
